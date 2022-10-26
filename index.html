@@ -26,7 +26,7 @@
         uniform float time;
 
         void main(){
-            gl_Position = projectionMatrix * modelViewMatrix * vec4(position.x, sin(position.y * time), position.z, 1.0);
+            gl_Position = projectionMatrix * modelViewMatrix * vec4(position.x, cos(position.y * time), position.z, 1.0);
         }
     </script>
     <script id="fragmentShader2" type="fragment">
